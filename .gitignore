@@ -1,6 +1,58 @@
 # Python
 __pycache__/
 *.py[cod]
+*.so
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+*.egg-info/
+dist/
+build/
+
+# pipenv / poetry
+Pipfile.lock
+poetry.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Node
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Python virtual env in repo root
+.venv/
+
+# Model artifacts (optional) - uncomment if you don't want models in git
+# colorization_release_v2.caffemodel
+# pts_in_hull.npy
+# colorization_deploy_v2.prototxt
+# Python
+__pycache__/
+*.py[cod]
 *$py.class
 .venv/
 venv/
