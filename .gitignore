@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.Python
+pip-wheel-metadata/
+
+# Virtualenv
+venv/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Frontend build
+frontend/build/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Model files and large data
+*.caffemodel
+*.prototxt
+*.npy
+outputs/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# OneDrive temporary
+~$*
