@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Use REACT_APP_API_URL in production; fall back to localhost for development
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function App() {
   const [file, setFile] = useState(null);
   const [useExample, setUseExample] = useState(false);
@@ -22,9 +25,9 @@ function App() {
       formData.append('image', file);
     }
 
-    try {
+      try {
       setLoading(true);
-      const resp = await fetch('http://localhost:5000/colorize', {
+      const resp = await fetch(`${API_URL}/colorize`, {
         method: 'POST',
         body: formData
       });
@@ -52,7 +55,7 @@ function App() {
             <p className="subtitle">Normal vs Hybrid Comparison — upload a grayscale image to compare</p>
           </div>
         </div>
-        <div className="meta">Backend: <code>http://localhost:5000</code></div>
+        <div className="meta">Backend: <code>{API_URL}</code></div>
       </div>
 
       <div className="card">
